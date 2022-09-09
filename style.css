@@ -1,0 +1,36 @@
+.jumbotron {
+  padding-top: 6rem;
+  background-color: #757575;
+}
+.about {
+  background-color: #f3f4f5;
+}
+
+.projects-section {
+  background-color: #757575;
+}
+
+.contact {
+  background-color: #f3f4f5;
+}
+
+a.card-link:link {
+  color: #212529;
+  text-decoration: none;
+}
+a.card-link:visited {
+  color: #212529;
+  text-decoration: none;
+}
+a.card-link:hover {
+  color: #212529;
+  text-decoration: none;
+}
+a.card-link:active {
+  color: #212529;
+  text-decoration: none;
+}
+
+section {
+  padding-top: 5rem;
+}
