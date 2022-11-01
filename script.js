@@ -34,10 +34,18 @@ const projects = [
   {
     id: 5,
     title: "Portfolio Website",
-    img: "img/project6.jpg",
+    img: "img/project5.jpg",
     link: "https://kamaloedin.github.io/",
     desc: "A website page built with Bootstrap 5 containing some of the projects i have done. (This page)",
     imgCredit: "https://unsplash.com/@domenicoloia",
+  },
+  {
+    id: 6,
+    title: "Personal Movie DB",
+    img: "img/project6.jpg",
+    link: "https://kamaloedin.github.io/my-personal-moviedb",
+    desc: "A website page that use an API to make it able to search any movie data and show them in cards and modal.",
+    imgCredit: "https://unsplash.com/@tysonmoultrie",
   },
 ];
 
