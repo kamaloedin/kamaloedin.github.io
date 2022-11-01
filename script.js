@@ -41,6 +41,7 @@ const projects = [
   },
 ];
 
+// Show projects section with data from the array object "projects"
 document.addEventListener("DOMContentLoaded", function () {
   let cards = "";
   let row;
@@ -57,6 +58,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 });
 
+// Make the html codes with data from the objects
 const getCard = (project) => {
   return `<div class="col-md-4 mb-4">
   <div class="card">
@@ -79,8 +81,8 @@ const getCard = (project) => {
               <div class="container-fluid">
                 <div class="row justify-content-center">
                   <div class="col-9">
-                  ${project.desc}
-                  ${project.imgCredit}
+                  <p class="card-text">${project.desc}</p>
+                  <p class ="fs-6">Image credit:<br/>${project.imgCredit}</p>
                   </div>
                 </div>
               </div>
