@@ -47,6 +47,14 @@ const projects = [
     desc: "A website page that use an API to make it able to search any movie data and show them in cards and modal.",
     imgCredit: "https://unsplash.com/@tysonmoultrie",
   },
+  {
+    id: 7,
+    title: "Contact App",
+    img: "img/project7.jpg",
+    link: "https://kamaloedin.github.io/contact-app",
+    desc: "A simple CRUD app made with javascript, NodeJS, ExpressJS, HTML, and CSS",
+    imgCredit: "https://unsplash.com/@brett_jordan",
+  },
 ];
 
 // Show projects section with data from the array object "projects"
@@ -90,7 +98,7 @@ const getCard = (project) => {
                 <div class="row justify-content-center">
                   <div class="col-9">
                   <p class="card-text">${project.desc}</p>
-                  <p class ="fs-6">Image credit:<br/>${project.imgCredit}</p>
+                  <p class ="fs-6">Photo by: <br/>${project.imgCredit}</p>
                   </div>
                 </div>
               </div>
