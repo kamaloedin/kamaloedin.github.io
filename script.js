@@ -51,7 +51,7 @@ const projects = [
     id: 7,
     title: "Contact App",
     img: "img/project7.jpg",
-    link: "https://kamaloedin.github.io/contact-app",
+    link: "https://github.com/kamaloedin/contact-app",
     desc: "A simple CRUD app made with javascript, NodeJS, ExpressJS, HTML, and CSS",
     imgCredit: "https://unsplash.com/@brett_jordan",
   },
