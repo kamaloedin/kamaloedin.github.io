@@ -49,7 +49,7 @@ const projects = [
   },
   {
     id: 7,
-    title: "Contact App",
+    title: "Express Contact App",
     img: "img/project7.jpg",
     link: "https://github.com/kamaloedin/contact-app",
     desc: "A simple CRUD app made with javascript, NodeJS, ExpressJS, HTML, and CSS",
@@ -79,7 +79,7 @@ const getCard = (project) => {
   return `<div class="col-md-4 mb-4">
   <div class="card">
     <a class="card-link" href="${project.link}">
-      <img src="${project.img}" class="card-img-top" alt="todo list image" />
+      <img src="${project.img}" class="card-img-top" alt="${project.title} image" />
     </a>
     <div class="card-body">
       <p class="card-text">${project.title}</p>
