@@ -31,6 +31,11 @@ a.card-link:active {
   text-decoration: none;
 }
 
+a > img {
+  max-height: 200px;
+  /* min-height: 260px; */
+}
+
 section {
   padding-top: 5rem;
 }
