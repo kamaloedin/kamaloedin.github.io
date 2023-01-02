@@ -1,73 +1,81 @@
 const projects = [
   {
     id: 1,
-    title: "Todo List App",
-    img: "img/project1.jpg",
-    link: "https://kamaloedin.github.io/todo-app",
-    desc: "A simple CRUD web app built with javascript that can add lists that can be shown, edited, and deleted.",
-    imgCredit: "https://unsplash.com/@glenncarstenspeters",
+    title: 'Todo List App',
+    img: 'img/project1.jpg',
+    link: 'https://kamaloedin.github.io/todo-app',
+    desc: 'A simple CRUD web app built with javascript that can add lists that can be shown, edited, and deleted.',
+    imgCredit: 'https://unsplash.com/@glenncarstenspeters',
   },
   {
     id: 2,
-    title: "Bookshelf App",
-    img: "img/project2.jpg",
-    link: "https://kamaloedin.github.io/bookshelf-app",
+    title: 'Bookshelf App',
+    img: 'img/project2.jpg',
+    link: 'https://kamaloedin.github.io/bookshelf-app',
     desc: "A simple web app that use javascript to store books' data, group them, and make them searchable.",
-    imgCredit: "https://unsplash.com/@pickawood",
+    imgCredit: 'https://unsplash.com/@pickawood',
   },
   {
     id: 3,
-    title: "Website Page",
-    img: "img/project3.jpg",
-    link: "https://kamaloedin.github.io/website-page",
-    desc: "A simple and clean website page built with HTML, CSS and Javascript with an article about front-end development as its content.",
-    imgCredit: "https://unsplash.com/@le_buzz",
+    title: 'Website Page',
+    img: 'img/project3.jpg',
+    link: 'https://kamaloedin.github.io/website-page',
+    desc: 'A simple and clean website page built with HTML, CSS and Javascript with an article about front-end development as its content.',
+    imgCredit: 'https://unsplash.com/@le_buzz',
   },
   {
     id: 4,
-    title: "Rock Paper Scissor",
-    img: "img/project4.jpg",
-    link: "https://kamaloedin.github.io/rps-game",
-    desc: "A simple web-based version of Rock Paper Scissor game built with HTML, CSS, and Javascript.",
-    imgCredit: "https://unsplash.com/@marcus_wallis",
+    title: 'Rock Paper Scissor',
+    img: 'img/project4.jpg',
+    link: 'https://kamaloedin.github.io/rps-game',
+    desc: 'A simple web-based version of Rock Paper Scissor game built with HTML, CSS, and Javascript.',
+    imgCredit: 'https://unsplash.com/@marcus_wallis',
   },
   {
     id: 5,
-    title: "Portfolio Website",
-    img: "img/project5.jpg",
-    link: "https://kamaloedin.github.io/",
-    desc: "A website page built with Bootstrap 5 containing some of the projects i have done. (This page)",
-    imgCredit: "https://unsplash.com/@domenicoloia",
+    title: 'Portfolio Website',
+    img: 'img/project5.jpg',
+    link: 'https://kamaloedin.github.io/',
+    desc: 'A website page built with Bootstrap 5 containing some of the projects i have done. (This page)',
+    imgCredit: 'https://unsplash.com/@domenicoloia',
   },
   {
     id: 6,
-    title: "Personal Movie DB",
-    img: "img/project6.jpg",
-    link: "https://kamaloedin.github.io/my-personal-moviedb",
-    desc: "A website page that use an API to make it able to search any movie data and show them in cards and modal.",
-    imgCredit: "https://unsplash.com/@tysonmoultrie",
+    title: 'Personal Movie DB',
+    img: 'img/project6.jpg',
+    link: 'https://kamaloedin.github.io/my-personal-moviedb',
+    desc: 'A website page that use an API to make it able to search any movie data and show them in cards and modal.',
+    imgCredit: 'https://unsplash.com/@tysonmoultrie',
   },
   {
     id: 7,
-    title: "Express Contact App",
-    img: "img/project7.jpg",
-    link: "https://github.com/kamaloedin/express-contact-app",
-    desc: "A simple CRUD app made with javascript, NodeJS, ExpressJS, HTML, and CSS",
-    imgCredit: "https://unsplash.com/@brett_jordan",
+    title: 'Express Contact App',
+    img: 'img/project7.jpg',
+    link: 'https://github.com/kamaloedin/express-contact-app',
+    desc: 'A simple CRUD app made with javascript, NodeJS, ExpressJS, HTML, and CSS',
+    imgCredit: 'https://unsplash.com/@brett_jordan',
+  },
+  {
+    id: 8,
+    title: 'Random User Generator',
+    img: 'img/project8.jpg',
+    link: 'https://github.com/kamaloedin/random-user-generator',
+    desc: 'A simple Vue App that uses API to generate a random user profile. The App also changes based on gender',
+    imgCredit: 'https://unsplash.com/@benjaminsweet',
   },
 ];
 
 // Show projects section with data from the array object "projects"
-document.addEventListener("DOMContentLoaded", function () {
-  let cards = "";
+document.addEventListener('DOMContentLoaded', function () {
+  let cards = '';
   let row;
-  const projectsContainer = document.getElementById("projects-container");
+  const projectsContainer = document.getElementById('projects-container');
   for (project of projects) {
     if (project.id % 3 === 1) {
-      row = document.createElement("div");
-      row.classList.add("row", "text-center", "justify-content-center", "fs-5");
+      row = document.createElement('div');
+      row.classList.add('row', 'text-center', 'justify-content-center', 'fs-5');
       projectsContainer.append(row);
-      cards = "";
+      cards = '';
     }
     cards += getCard(project);
     row.innerHTML = cards;
