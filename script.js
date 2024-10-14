@@ -41,7 +41,7 @@ const projects = [
   },
   {
     id: 6,
-    title: 'Personal Movie DB',
+    title: 'Personal Movie DB <b>(Deprecated)</b>',
     img: 'img/project6.jpg',
     link: 'https://kamaloedin.github.io/my-personal-moviedb',
     desc: 'A website page that use an API to make it able to search any movie data and show them in cards and modal.',
