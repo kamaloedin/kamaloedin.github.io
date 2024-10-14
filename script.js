@@ -63,6 +63,14 @@ const projects = [
     desc: 'A simple Vue App that uses API to generate a random user profile. The App also changes based on gender',
     imgCredit: 'https://unsplash.com/@benjaminsweet',
   },
+  {
+    id: 9,
+    title: 'More Projects',
+    img: 'img/github.webp',
+    link: 'https://github.com/kamaloedin',
+    desc: 'More projects on Github. Some projects that cannot be displayed such as backend to certain apps.',
+    imgCredit: 'https://www.textstudio.com/vector/github-logo-9960',
+  },
 ];
 
 // Show projects section with data from the array object "projects"
